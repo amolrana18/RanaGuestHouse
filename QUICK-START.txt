@@ -1,0 +1,94 @@
+# QUICK START GUIDE
+
+## ✅ Project Status: READY TO RUN!
+
+Your Rana Guest House website has been successfully created and built!
+
+## 🚀 How to Start
+
+### Option 1: Double-click the batch file
+Simply double-click `start-dev.bat` to start the development server.
+
+### Option 2: Use command line
+```bash
+npm run dev
+```
+
+Then open: http://localhost:3000
+
+## 📱 Pages Available
+
+1. **Home** - http://localhost:3000/
+2. **Rooms & Rates** - http://localhost:3000/rooms
+3. **Packages** - http://localhost:3000/packages
+4. **Gallery** - http://localhost:3000/gallery
+5. **Nearby Attractions** - http://localhost:3000/nearby
+6. **About Us** - http://localhost:3000/about
+7. **Contact** - http://localhost:3000/contact
+
+## 🎨 Features Included
+
+✅ Fully responsive design (mobile, tablet, desktop)
+✅ Sticky navigation header with hamburger menu
+✅ SEO optimized with meta tags
+✅ Click-to-call phone numbers
+✅ WhatsApp integration
+✅ Professional color scheme (Deep Blue & Gold)
+✅ Google Fonts (Playfair Display & Poppins)
+✅ Image placeholders (ready for your photos)
+✅ Contact information throughout
+✅ Sitemap and robots.txt for SEO
+
+## 📝 Next Steps
+
+### 1. Add Real Images
+Replace image placeholders with actual photos:
+- Put images in the `public/images/` folder
+- Update components to use real images
+
+### 2. Customize Content
+- Edit room prices in `pages/rooms.js`
+- Update package details in `pages/packages.js`
+- Add more testimonials in `pages/index.js`
+
+### 3. Deploy to Production
+
+**Vercel (Easiest):**
+```bash
+npm install -g vercel
+vercel
+```
+
+**Netlify:**
+- Connect GitHub repository
+- Build command: `npm run build`
+- Publish directory: `.next`
+
+**Static Export:**
+```bash
+npm run build
+npm run export
+```
+Upload the `out` folder to any hosting.
+
+## 🔧 Troubleshooting
+
+**Port already in use?**
+The default port is 3000. If it's busy, Next.js will automatically use 3001.
+
+**Build errors?**
+Run: `npm install` to reinstall dependencies.
+
+**Need help?**
+Check the README.md file for detailed documentation.
+
+## 📞 Contact Details in Website
+
+- Amol Rana: +91 8979702574
+- Anshul Rana: +91 9368254360
+- Akshay Rana: +91 9368297566
+- Email: stay@himalayanhomestay.com
+
+## 🎉 You're All Set!
+
+Your website is production-ready and can be deployed immediately!

@@ -6,21 +6,21 @@ export default function Nearby() {
   const attractions = [
     {
       name: 'Badrinath Temple',
-      distance: '75 km, 2.5 hours',
+      distance: '45 km, 2  hours',
       altitude: '3,300 m',
       description: 'One of the Char Dham temples, dedicated to Lord Vishnu. Ancient temple with a golden roof, located on the banks of river Alaknanda.',
       highlights: ['Tapt Kund hot springs', 'Nar-Narayan mountain range', 'Evening aarti']
     },
     {
       name: 'Kuari Pass',
-      distance: '25 km trek from Dhak',
+      distance: '18 km and then trek from Tugasi ',
       altitude: '12,516 ft',
       description: 'Also known as Curzon\'s Trail, offering stunning 360° views of Nanda Devi, Dronagiri, and Hathi Parbat peaks.',
       highlights: ['Alpine meadows', 'Camping', 'Birdlife', 'Sunrise views']
     },
     {
       name: 'Mana Village',
-      distance: '80 km, 3 hours',
+      distance: '48 km, 2.5 hours',
       altitude: '3,200 m',
       description: 'The last village before the Tibet border, with mythological connections to the Mahabharata.',
       highlights: ['Vyasa Gufa', 'Ganesh Gufa', 'Bhim Pul', 'Saraswati River origin']
@@ -30,35 +30,35 @@ export default function Nearby() {
       distance: '90 km, 3 hours',
       altitude: '3,600 m',
       description: 'Beautiful valley inhabited by the Bhotia tribe. Inner Line Permit required for certain areas.',
-      highlights: ['Malari village', 'Hot springs', 'Ancient temples', 'Tibetan border views']
+      highlights: ['Malari village', 'Hot springs', 'Ancient temples',"Timarsain mahadev ", 'Tibetan border views']
     }
   ];
 
   const moreAttractions = [
     {
       name: 'Auli',
-      distance: '30 km from Joshimath',
+      distance: '15 km from Joshimath',
       altitude: '2,800-3,050 m',
       description: 'India\'s premier ski resort, featuring the world\'s highest cable car and stunning views of Nanda Devi.',
       highlights: ['Skiing', 'Gondola ride', 'Triveni Lake', 'Nanda Devi views']
     },
     {
       name: 'Valley of Flowers',
-      distance: '50 km to base + 16 km trek',
+      distance: '25 km to base + 16 km trek',
       altitude: '3,600 m',
       description: 'UNESCO World Heritage Site famous for its alpine flowers and meadows. Best visited July-September.',
       highlights: ['Brahma Kamal', 'Medicinal plants', 'Photography', 'Endemic wildlife']
     },
     {
       name: 'Vasudhara Falls',
-      distance: '86 km + 6 km trek',
+      distance: '48 km + 6 km trek',
       altitude: '3,700 m',
       description: 'Mythological waterfall that creates rainbows on sunny days. Sacred to Hindus and Buddhists.',
       highlights: ['6 km trek from Mana', 'Rainbow formation', 'Draupadi legend', 'Crystal clear water']
     },
     {
       name: 'Hemkund Sahib',
-      distance: '70 km + 19 km trek',
+      distance: '25 km + 19 km trek',
       altitude: '15,200 ft',
       description: 'The highest Gurudwara in the world, surrounded by seven snow-capped peaks and a crystal clear lake.',
       highlights: ['Highest Gurudwara', 'Free Langar', 'Crystal lake', 'June-October only']

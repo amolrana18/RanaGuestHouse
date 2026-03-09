@@ -4,9 +4,18 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 export default function Gallery() {
   const galleryImages = [
     { category: 'Rooms', images: 6 },
-    { category: 'Views', images: 6 },
+    { category: 'Views', images: 8 },
     { category: 'Nearby Attractions', images: 8 },
-    
+  ];
+
+  // image arrays for specific sections
+  const roomsPics = [
+    '/assests/room 2 bed.jpeg',
+    '/assests/room3 bed.jpeg',
+    '/assests/home.jpeg',
+    '/assests/home1.jpeg',
+    '/assests/washroom.jpeg',
+    '/assests/room2bed1.jpeg'
   ];
 
   // file names for nearby attractions in order matching the sections in nearby.js
@@ -53,6 +62,12 @@ export default function Gallery() {
                     <img
                       src={nearbyPics[i] || '/assests/home.jpeg'}
                       alt={`Nearby ${i + 1}`}
+                      style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '10px' }}
+                    />
+                  ) : section.category === 'Rooms' ? (
+                    <img
+                      src={roomsPics[i] || '/assests/home.jpeg'}
+                      alt={`Room ${i + 1}`}
                       style={{ width: '100%', height: '250px', objectFit: 'cover', borderRadius: '10px' }}
                     />
                   ) : (

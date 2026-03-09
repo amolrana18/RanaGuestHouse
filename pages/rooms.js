@@ -6,32 +6,32 @@ import { Users } from 'lucide-react';
 export default function Rooms() {
   const rooms = [
     {
-      name: 'Deluxe Himalayan View Room',
-      price: '₹2,500/night',
-      capacity: '2 Adults + 1 Child',
+      name: 'Triple Room',
+      price: '₹2,000/night',
+      capacity: '3 Adults + 1 Child',
       description: 'Wake up to breathtaking mountain views from your window. Spacious room with modern amenities and traditional Garhwali touches.',
-      amenities: ['Mountain View', 'Attached Bathroom', 'Hot Water 24/7', 'WiFi', 'Room Heater', 'Tea/Coffee Maker']
+      amenities: ['Mountain View', 'Attached Bathroom', 'Hot Water 24/7', 'WiFi', 'Room Heater', 'Tea/Coffee ' ,"Almirah"]
     },
     {
       name: 'Standard Double Room',
-      price: '₹1,800/night',
+      price: '₹1,500/night',
       capacity: '2 Adults',
       description: 'Comfortable room with garden views, perfect for couples or solo travelers. All essential amenities provided.',
       amenities: ['Garden View', 'Attached Bathroom', 'Hot Water 24/7', 'WiFi', 'Almirah']
     },
     {
-      name: 'Family Suite',
-      price: '₹3,800/night',
-      capacity: '4 Adults + 2 Children',
-      description: 'Perfect for families or groups. Two interconnected bedrooms with a common sitting area and kitchen access.',
-      amenities: ['Two Bedrooms', 'Common Area', 'Kitchen Access', 'Mountain View', 'Hot Water', 'WiFi', 'Heater']
+      name: 'Family Room',
+      price: '₹2,500/night',
+      capacity: '2 Adults + 2 Children',
+      description: 'Perfect for families or groups. Two double bed and a simgle bed and kitchen access.',
+      amenities: ['Almirah', 'Common Area', 'Kitchen Access', 'Mountain View', 'Hot Water', 'WiFi', 'Heater']
     },
     {
       name: 'Dormitory Beds',
       price: '₹600/bed',
-      capacity: '8 Beds (Shared)',
+      capacity: '4 Beds (Shared)',
       description: 'Budget accommodation perfect for trekkers and backpackers. Clean, comfortable beds in a shared dormitory.',
-      amenities: ['Individual Lockers', 'Common Bathroom', 'Hot Water', 'WiFi', 'Common Room', 'Charging Points']
+      amenities: ['Almirah', 'Common Bathroom', 'Hot Water', 'WiFi', 'Common Room', 'Charging Points']
     }
   ];
 
@@ -50,7 +50,17 @@ export default function Rooms() {
         <div className="card-grid">
           {rooms.map((room, index) => (
             <div className="card" key={index}>
-              <ImagePlaceholder text={`Image: ${room.name}`} />
+              {room.name === 'Triple Room' ? (
+                <img src="/assests/room2bed1.jpeg" alt="Triple Room" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+              ) : room.name === 'Standard Double Room' ? (
+                <img src="/assests/room 2 bed.jpeg" alt="Standard Double Room" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+              ) : room.name === 'Family Room' ? (
+                <img src="/assests/room3 bed.jpeg" alt="Family Room" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+              ) : room.name === 'Dormitory Beds' ? (
+                <img src="/assests/home1.jpeg" alt="Dormitory Beds" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+              ) : (
+                <ImagePlaceholder text={`Image: ${room.name}`} />
+              )}
               <div className="card-content">
                 <h3>{room.name}</h3>
                 <div className="price">{room.price}</div>

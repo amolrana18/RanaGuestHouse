@@ -9,14 +9,14 @@ export default function Home() {
   ];
 
   const featuredRooms = [
-    { name: 'Deluxe Himalayan View', price: '₹2,500/night', capacity: '2 Adults + 1 Child' },
-    { name: 'Family Suite', price: '₹3,800/night', capacity: '4 Adults + 2 Children' },
-    { name: 'Dormitory Beds', price: '₹600/bed', capacity: 'Shared 8 beds' }
+    { name: 'Double Room ', price: '₹1500/night', capacity: '2 Adults + 1 Child' },
+    { name: 'Triple Room', price: '₹2000/night', capacity: '3 Adults + 1 Children' },
+    { name: 'Dormitory Beds', price: '₹600/bed', capacity: 'Shared 4 beds' }
   ];
 
   return (
     <Layout 
-      title="Home - Himalayan Homestay in Joshimath"
+      title="Rana Guest House - Best Stay in Baragaon, Joshimath"
       description="Welcome to Rana Guest House in Baragaon, Joshimath. Experience authentic Himalayan hospitality with stunning mountain views. Perfect base for treks and pilgrimages."
     >
       <section className="hero">
@@ -42,7 +42,15 @@ export default function Home() {
           <div className="card-grid">
             {featuredRooms.map((room, index) => (
               <div className="card" key={index}>
-                <ImagePlaceholder text={`Image: ${room.name}`} />
+                {room.name === 'Double Room ' ? (
+                  <img src="/assests/room 2 bed.jpeg" alt="Double Room" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+                ) : room.name === 'Triple Room' ? (
+                  <img src="/assests/room3 bed.jpeg" alt="Triple Room" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+                ) : room.name === 'Dormitory Beds' ? (
+                  <img src="/assests/home1.jpeg" alt="Dormitory Beds" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} />
+                ) : (
+                  <ImagePlaceholder text={`Image: ${room.name}`} />
+                )}
                 <div className="card-content">
                   <h3>{room.name}</h3>
                   <div className="price">{room.price}</div>

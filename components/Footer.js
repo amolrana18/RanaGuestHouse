@@ -31,8 +31,9 @@ const Footer = () => {
               <Phone size={18} />
               <div>
                 <div>Amol Rana: <a href="tel:+918979702574">+91 8979702574</a></div>
-                <div>Anshul Rana: <a href="tel:+919368254360">+91 9368254360</a></div>
+                <div>Anshul Rana: <a href="tel:+917830368842">+91 7830368842</a></div>
                 <div>Akshay Rana: <a href="tel:+919368297566">+91 9368297566</a></div>
+                <div>Ayush Rana: <a href="tel:+918755481856">+91 8755481856</a></div>
               </div>
             </div>
             <div className="contact-detail" style={{ justifyContent: 'flex-start', marginTop: '0.5rem' }}>
@@ -46,9 +47,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">
+        {/* <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Rana Guest House. All rights reserved.</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

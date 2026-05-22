@@ -4,9 +4,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle, Navigation } from 'lucide-re
 export default function Contact() {
   const contacts = [
     { name: 'Amol Rana', phone: '+91 8979702574', role: 'Primary Contact' },
-    { name: 'Anshul Rana', phone: '+91 7830368842', role: 'Hospitality' },
-    { name: 'Akshay Rana', phone: '+91 9368297566', role: 'Operations' },
-    { name: 'Ayush Rana', phone: '+91 8755481856', role: 'Operations' }
+
   ];
 
   const latitude = "30.521658";

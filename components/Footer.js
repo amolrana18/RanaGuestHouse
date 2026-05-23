@@ -31,6 +31,7 @@ const Footer = () => {
               <Phone size={18} />
               <div>
                 <div>Amol Rana: <a href="tel:+918979702574">+91 8979702574</a></div>
+                <div>Amol Rana: <a href="tel:+919258022093">+91 9258022093</a></div>
           
               </div>
             </div>

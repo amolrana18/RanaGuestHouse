@@ -10,28 +10,28 @@ export default function Rooms() {
       price: '₹2,000/night',
       capacity: '3 Adults + 1 Child',
       description: 'Wake up to breathtaking mountain views from your window. Spacious room with modern amenities and traditional Garhwali touches.',
-      amenities: ['Mountain View', 'Attached Bathroom', 'Hot Water 24/7', 'WiFi', 'Room Heater', 'Tea/Coffee ' ,"Almirah"]
+      amenities: ['Mountain View', 'Attached Bathroom', 'Hot Water 24/7', 'Room Heater', 'Tea/Coffee ' ,"Almirah"]
     },
     {
       name: 'Standard Double Room',
       price: '₹1,500/night',
       capacity: '2 Adults',
       description: 'Comfortable room with garden views, perfect for couples or solo travelers. All essential amenities provided.',
-      amenities: ['Garden View', 'Attached Bathroom', 'Hot Water 24/7', 'WiFi', 'Almirah']
+      amenities: ['Garden View', 'Attached Bathroom', 'Hot Water 24/7',  'Almirah']
     },
     {
       name: 'Family Room',
       price: '₹2,500/night',
       capacity: '2 Adults + 2 Children',
       description: 'Perfect for families or groups. Two double bed and a simgle bed and kitchen access.',
-      amenities: ['Almirah', 'Common Area', 'Kitchen Access', 'Mountain View', 'Hot Water', 'WiFi', 'Heater']
+      amenities: ['Almirah', 'Common Area', 'Kitchen Access', 'Mountain View', 'Hot Water',  'Heater']
     },
     {
       name: 'Dormitory Beds',
       price: '₹600/bed',
       capacity: '4 Beds (Shared)',
       description: 'Budget accommodation perfect for trekkers and backpackers. Clean, comfortable beds in a shared dormitory.',
-      amenities: ['Almirah', 'Common Bathroom', 'Hot Water', 'WiFi', 'Common Room', 'Charging Points']
+      amenities: ['Almirah', 'Common Bathroom', 'Hot Water',  'Common Room', 'Charging Points']
     }
   ];
 

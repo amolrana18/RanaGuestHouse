@@ -73,6 +73,20 @@ export default function Home() {
               View Rooms
             </Link>
 
+            <a
+              href="/assests/Rana Guest House Tariff 2026.pdf"
+              download
+              style={{
+                background:'#16a34a',
+                color:'white',
+                padding:'12px 24px',
+                borderRadius:'6px',
+                textDecoration:'none'
+              }}
+            >
+              Download Tariff
+            </a>
+
           </div>
 
         </div>
